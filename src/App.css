@@ -1,0 +1,59 @@
+
+
+
+/* Overall container with flexbox to align sidebar and content side by side */
+
+
+/* Sidebar Styling */
+
+
+/* Main content container (this will be pushed to the right by the sidebar) */
+.content-container {
+  margin-left: 100px; /* Space for the sidebar */
+  padding-top: 64px; 
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 100vh;
+  position: relative; /* To allow for absolute positioning inside */
+}
+
+/* Fixed Header */
+.header {
+  position: fixed; /* Fix the header on top */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 0px 0px;
+  border-bottom: 1px solid #ddd;
+  z-index: 100;
+}
+
+/* Fixed Second Header */
+
+/* Main content should be scrollable below fixed headers */
+.main-content {
+  /* padding-top: 80px; To avoid overlap with headers */
+  overflow-y: auto;
+  height: calc(100vh - 80px); /* Full height minus header height */
+}
+
+/* Additional styling for the Sidebar items */
+
+
+
+/* Overall container with flexbox to align sidebar and content side by side */
+.app-container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevent vertical scrolling */
+}
+
+/* Sidebar Styling */
+
+
+
+
+
+
+
